@@ -7,7 +7,7 @@ sales forecasts with confidence intervals in real-time.
 
 import streamlit as st
 import numpy as np
-import pandas as pd
+
 import plotly.graph_objects as go
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.linear_model import QuantileRegressor
@@ -102,7 +102,7 @@ def train_models(train_data, lookback, lower_percentile, upper_percentile):
     model_median.fit(X_train_scaled, y_train_scaled)
     
     # Model for upper bound
-    model_upper = QuantileRegressor(quantile=0.95, alpha=0.01, solver='highs')
+    model_upper = QuantileRegressor(quantile=alpha_upper, alpha=0.01, solver='highs')
     model_upper.fit(X_train_scaled, y_train_scaled)
     
     return model_lower, model_median, model_upper, scaler_X, scaler_y, X_train, y_train

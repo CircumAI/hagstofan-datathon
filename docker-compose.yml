@@ -1,6 +1,6 @@
 services:
   sales-prediction-app:
-    build: .
+
     image: ghcr.io/circumai/hagstofan-datathon:latest
     container_name: sales-prediction-app
     restart: unless-stopped
