@@ -9,6 +9,7 @@ on:
       - created
 
 jobs:
+  permissions: write-all
   build:
     uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@main
     with:
