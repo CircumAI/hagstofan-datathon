@@ -1,2 +1,2 @@
-# Hagstofan-Datathon-data-2025
-Data used in the Hagstofan Datathon 2025
+# Hagstofan-Datathon CircumAI
+CircumAIs Repository for the Hagstofan Datathon 2025
