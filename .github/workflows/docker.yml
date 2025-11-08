@@ -9,8 +9,8 @@ on:
       - created
 
 jobs:
-  permissions: write-all
   build:
+    permissions: write-all
     uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@main
     with:
       image-name: circumai/hagstofan-datathon
