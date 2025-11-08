@@ -1,0 +1,3 @@
+localhost {
+    reverse_proxy sales-prediction-app:8501
+}

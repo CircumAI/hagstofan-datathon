@@ -1,0 +1,15 @@
+name: Build and Push Docker Image
+
+on:
+  pull_request:
+  push:
+    branches: [ main ] 
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+    uses: ls1intum/.github/.github/workflows/build-and-push-docker-image.yml@main
+    with:
+      image-name: circumai/hagstofan-datathon

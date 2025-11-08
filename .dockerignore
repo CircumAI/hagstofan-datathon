@@ -1,0 +1,42 @@
+# Git files
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Documentation (keep README.md and other .md files for the app)
+# but exclude any local dev notes
+notes.md
+todo.md
+
+# Images (except the one needed by the app if any)
+# Keep sales_prediction_with_confidence_intervals.png if needed for demo
+# *.png
+
+# Demo/test files
+demo_web_app.py
